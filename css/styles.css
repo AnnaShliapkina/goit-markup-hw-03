@@ -10,6 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--primary-white-color);
 }
+
 .logo1part {
   font-family: "Raleway", sans-serif;
   font-style: normal;
@@ -35,10 +36,14 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 20px;
+  display: inline-block;
 }
 
 .nav-list-header {
   list-style: none;
+  display: flex;
+  align-items: flex-start;
 }
 
 .nav-list-header .link:hover,
@@ -53,6 +58,8 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  margin-right: 50px;
+  display: inline-block;
 }
 
 .auto-nav .auto-link:hover,
@@ -62,6 +69,8 @@ body {
 
 .auto-nav {
   list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .title-bar {
@@ -73,4 +82,52 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.page-header {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  padding-left: 215px;
+  padding-right: 215px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  color: var(--title-text-color);
+  background-color: #f5f4fa;
+  margin-left: 8px;
+  border-radius: 4px;
+  width: 128px;
+  height: 38px;
+  left: 576px;
+  top: 174px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  border: none;
+}
+
+.buttons .button:hover,
+.buttons .button:focus {
+  background-color: var(--hover-button-color);
+  color: var(--primary-white-color);
 }
