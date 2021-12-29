@@ -27,6 +27,7 @@ body {
   font-size: 26px;
   line-height: 1.2;
   color: var(--primary-black-color);
+  text-decoration: none;
 }
 
 .nav-list-header .link {
@@ -38,6 +39,7 @@ body {
   letter-spacing: 0.02em;
   margin-right: 20px;
   display: inline-block;
+  text-decoration: none;
 }
 
 .nav-list-header {
@@ -60,6 +62,7 @@ body {
   letter-spacing: 0.02em;
   margin-right: 50px;
   display: inline-block;
+  text-decoration: none;
 }
 
 .auto-nav .auto-link:hover,
@@ -71,17 +74,6 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
-}
-
-.title-bar {
-  color: var(--primary-white-color);
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.4;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .page-header {
@@ -130,4 +122,69 @@ nav {
 .buttons .button:focus {
   background-color: var(--hover-button-color);
   color: var(--primary-white-color);
+}
+
+.bar {
+  width: 1600px;
+  height: 600px;
+  left: 0px;
+  top: 80px;
+  background-color: #2f303a;
+}
+.title-bar {
+  color: var(--primary-white-color);
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  position: absolute;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
+}
+
+.button-bar {
+  position: absolute;
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 430px;
+  margin-top: 30px;
+  border-radius: 4px;
+  background-color: var(--hover-button-color);
+  color: var(--primary-white-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+}
+
+.hidden {
+  display: none;
+}
+
+.opportunity {
+}
+
+.opportunities h3 {
+  color: var(--title-text-color);
+  ont-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.opportunities p {
+  color: var(--primary-text-color)
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
 }
