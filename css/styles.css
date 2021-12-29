@@ -172,7 +172,7 @@ nav {
 
 .opportunities h3 {
   color: var(--title-text-color);
-  ont-style: normal;
+  font-style: normal;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -182,7 +182,7 @@ nav {
 
 .opportunities p {
   color: var(--primary-text-color)
-  font-style: normal;
+  font-style:normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 24px;
