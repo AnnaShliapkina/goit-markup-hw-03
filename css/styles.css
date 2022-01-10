@@ -19,7 +19,8 @@ body {
   width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 /* Header общий */
 
@@ -116,10 +117,10 @@ body {
 /* Кнопки Портфолио */
 .buttons {
   padding: 0;
+  margin: 0;
   display: flex;
   justify-content: center;
   margin-top: 94px;
-  margin-bottom: 50px;
   list-style: none;
 }
 
@@ -152,11 +153,15 @@ body {
 }
 
 /* Бар Студио */
+.section {
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+
 .bar {
   margin-top: 0;
   background-color: var(--primary-bar-color);
   text-align: center;
-  margin-bottom: 94px;
 }
 .title-bar {
   color: var(--primary-white-color);
@@ -192,7 +197,6 @@ body {
   display: flex;
   padding: 0;
   margin: 0;
-  margin-bottom: 94px;
   list-style: none;
 }
 
@@ -238,7 +242,6 @@ body {
 }
 .about-pictures {
   padding: 0;
-  margin-bottom: 94px;
   display: flex;
   justify-content: space-between;
   list-style: none;
@@ -249,7 +252,6 @@ body {
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  margin-bottom: 94px;
   list-style: none;
 }
 
