@@ -26,7 +26,10 @@ body {
 .nav {
   display: flex;
   align-items: center;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 
 .logo {
