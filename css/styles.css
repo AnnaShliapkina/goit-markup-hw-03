@@ -116,8 +116,19 @@ body {
 /* Студио Main */
 
 /* Спрятать hidden  заголовки */
-.hidden {
-  display: none;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .opportunities {
@@ -207,44 +218,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-/* Main Портфолио */
-/* Кнопки Портфолио */
-.buttons {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-
-.button {
-  display: inline-block;
-  padding-left: 22px;
-  padding-right: 22px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-  margin-left: 8px;
-
-  min-width: 73px;
-
-  color: var(--title-text-color);
-  background-color: var(--primary-light-color-button);
-
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.65;
-  letter-spacing: 0.03em;
-  text-align: center;
-  border: none;
-}
-
-.buttons .button:hover,
-.buttons .button:focus {
-  background-color: var(--hover-button-color);
-  color: var(--primary-white-color);
-}
-
 /* Бар Студио */
 .section {
   padding-top: 47px;
@@ -253,6 +226,10 @@ body {
 
 .section:last-child {
   padding-bottom: 94px;
+}
+
+.section:first-child {
+  padding-top: 94px;
 }
 
 .bar {
@@ -292,6 +269,44 @@ body {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+}
+
+/* Main Портфолио */
+/* Кнопки Портфолио */
+.buttons {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.button {
+  display: inline-block;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-left: 8px;
+
+  min-width: 73px;
+
+  color: var(--title-text-color);
+  background-color: var(--primary-light-color-button);
+
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.65;
+  letter-spacing: 0.03em;
+  text-align: center;
+  border: none;
+}
+
+.buttons .button:hover,
+.buttons .button:focus {
+  background-color: var(--hover-button-color);
+  color: var(--primary-white-color);
 }
 
 .samples {
