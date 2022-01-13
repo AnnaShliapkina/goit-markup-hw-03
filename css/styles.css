@@ -16,8 +16,27 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -63,10 +82,15 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
+.nav-item-header {
+  margin-left: 50px;
+}
+.nav-item-header:first-child {
+  margin-left: 0;
+}
 
 .nav-list-header .link {
   display: block;
-  margin-right: 50px;
   padding-top: 32px;
   padding-bottom: 32px;
 
@@ -90,14 +114,10 @@ body {
 .auto-nav {
   display: flex;
   margin-left: auto;
-  padding: 0;
-
-  list-style: none;
 }
 
 .auto-link {
   display: block;
-  margin-right: 50px;
 
   color: var(--primary-text-color);
 
@@ -135,9 +155,6 @@ body {
 
 .opportunities {
   display: flex;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
 .name-list {
@@ -166,6 +183,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.team-section {
+  background-color: var(--primary-light-color-button);
+}
+
 .about-name {
   padding: 0;
   margin: 0;
@@ -179,28 +200,40 @@ body {
   letter-spacing: 0.03em;
 }
 
-.shadow-box {
+.community-item {
+  margin-left: 30px;
   width: 270;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 0px 0px 4px 4px;
 }
+.community-item:first-child {
+  margin-left: 0;
+}
 
 .about-pictures {
-  padding: 0;
   display: flex;
   justify-content: space-between;
-  list-style: none;
+}
+
+.list-pictures {
+  margin-left: 30px;
+}
+
+.list-pictures:first-child {
+  margin-left: 0;
 }
 
 .community {
   display: flex;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
-.we {
+.team {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.subject-team {
+  margin-bottom: 10px;
   color: var(--title-text-color);
 
   font-weight: 500;
@@ -222,21 +255,15 @@ body {
 
 /* Бар Студио */
 .section {
-  padding-top: 47px;
-  padding-bottom: 47px;
-}
-
-.section:last-child {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section:first-child {
-  padding-top: 94px;
+.work-section {
+  padding-top: 0;
 }
 
 .bar {
-  margin-top: 0;
-  margin-bottom: 47px;
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--primary-bar-color);
@@ -276,11 +303,9 @@ body {
 /* Main Портфолио */
 /* Кнопки Портфолио */
 .buttons {
-  padding: 0;
-  margin: 0;
   display: flex;
   justify-content: center;
-  list-style: none;
+  margin-bottom: 50px;
 }
 
 .button {
@@ -289,7 +314,6 @@ body {
   padding-right: 22px;
   padding-top: 6px;
   padding-bottom: 6px;
-  margin-left: 8px;
 
   min-width: 73px;
 
@@ -314,9 +338,16 @@ body {
 .samples {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
+
   margin: -15px;
-  list-style: none;
+}
+
+.btn-item {
+  margin-right: 8px;
+}
+
+.btn-item:last-child {
+  margin-right: 0;
 }
 
 .item {
@@ -333,9 +364,6 @@ body {
 
 .project-name {
   margin: 0;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-top: 20px;
 
   color: var(--title-text-color);
 
@@ -347,10 +375,7 @@ body {
 
 .project-type {
   margin: 0;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  padding-top: 4px;
+  margin-top: 4px;
   color: var(--primary-text-color);
 
   font-weight: 400;
@@ -360,14 +385,12 @@ body {
 }
 
 .border {
-  border-bottom: 1px solid var(--primary-border-color);
-  border-left: 1px solid var(--primary-border-color);
-  border-right: 1px solid var(--primary-border-color);
+  border: 1px solid var(--primary-border-color);
+  padding-right: 24px;
+  padding-left: 24px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-
-/* img {
-  display: block;
-} */
 
 /* Общий footer */
 .footer {
@@ -377,16 +400,21 @@ body {
 }
 
 .logo-light {
-  margin-bottom: 20px;
   color: var(--primary-white-color);
 }
 .footer-list {
-  padding: 0;
-  list-style: none;
+  margin-top: 20px;
+}
+
+.footer-item {
+  padding-bottom: 9px;
+}
+
+.footer-item:last-child {
+  padding-bottom: 0;
 }
 
 .footer-link {
-  margin-bottom: 9px;
   color: var(--primary-white-color-60);
 
   font-style: normal;
